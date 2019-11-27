@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project Auxilium</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="rb_masculino">Masculino</string>
+    <string name="rb_feminino">Feminina</string>
+    <string name="action_conexao">Conexão bem sucedida</string>
+    <string name="action_erro_banco">Erro conexão com banco</string>
+    <string name="lbl_telefone">Telefone</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    android:orientation="vertical"
+    tools:context=".CadastrarActivity">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Completo"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true" />
+
+
+    <EditText
+        android:id="@+id/edtLogin"
+        android:layout_below="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        android:inputType="textNoSuggestions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_below="@id/edtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textNoSuggestions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_below="@id/edtSenha"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:inputType="textNoSuggestions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtEmail"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_telefone"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtTelefone"
+        android:layout_height="wrap_content"
+
+        android:text="Tipo Usuario"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/rgTipoUsuario"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtTelefone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rbAluno"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="Aluno" />
+
+        <RadioButton
+            android:id="@+id/rbMonitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="Monitor" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtNascimento"
+        android:layout_below="@+id/rgTipoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data de Nascimento"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtNascimento"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSexo"
+        android:text="Sexo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_below="@id/txtSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMasculino"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="@string/rb_masculino" />
+
+        <RadioButton
+            android:id="@+id/rbFeminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="@string/rb_feminino" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_below="@+id/rgSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginLeft="131dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botao"
+            android:text="Proximo"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btnSalvar"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/botao"
+            android:text="@string/btn_cancelar"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+</ScrollView>
